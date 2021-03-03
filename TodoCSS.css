@@ -1,0 +1,139 @@
+
+* {
+box-sizing: border-box;
+}
+
+body{
+    background-color: #080118e7;
+    background-image: url("Todo.jpg");
+    background-size: 100% 40%;
+    background-repeat: no-repeat;
+}
+
+.wrapper {  
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 5px;
+    max-width: 50%;
+    
+}
+
+#createNew {
+    position: relative;
+    background: #1e002a;
+    color: white;
+    font-size: 18px;
+    height: 5em;
+    width: 25em;
+    line-height: 40px;
+    margin-bottom: 15px;
+    margin-right: 0;
+}
+
+.inputField{
+    width: 35em;
+}
+
+.inputField h1{
+    letter-spacing: 1em;
+    color: white;
+}
+
+.inputField button{
+    position: relative;
+    height: 5em;
+    width: 5em;
+    background-color: #270664ec;
+    color: white;
+    border-radius: 8px;
+}
+
+.inputField button:hover{
+    background-color: #500fcaec;
+}
+
+ ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ ul li {
+    color: white;
+    position: relative;
+    background: #1e002a;
+    font-size: 18px;
+    height: 5em;
+    width: 30em;
+    line-height: 2em;
+    border-bottom: 2px solid grey;
+    padding: 0 2em;
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+
+ ul li label
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+ul li label input {
+    visibility: hidden;
+    appearance: none;
+}
+
+ul li label p{
+    width: 20em;
+}
+
+ul li label span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-right: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li label span:before {
+    position: absolute;
+}
+
+ul li label input:checked ~ span{
+    background: linear-gradient(to bottom right,rgb(38, 67, 236), rgb(127, 65, 228));
+    border: 1px solid aqua;
+
+}
+
+ul li label input:checked ~ p{
+    text-decoration: line-through;
+    color: rgba(204, 204, 204, 0.76);
+}
+
+ul li label input:checked ~ span::before{
+    border-left: 5px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+ul li label button{
+    position: relative;
+    background-image: url("deleteIcon.png");
+    background-size: 100%;
+    background-color: rgb(7, 131, 7);
+    width: 40px;
+    height: 40px;
+    left: 2em;
+    border-radius: 8px;
+}
+
+ul li label button:hover {
+    background-color: rgb(95, 7, 7);
+}

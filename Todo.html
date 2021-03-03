@@ -1,0 +1,63 @@
+<!Doctype html>
+<html>
+    <head>
+        <link rel = "stylesheet" href= "TodoCSS.css">
+        <script src="Todo.js"></script>
+    </head>
+
+    <Body >
+        <div class="background">
+        </div>
+        <div class="wrapper">
+            <div class="inputField">
+                <h1>TODO</h1>
+                <input id="createNew" type="text" placeholder="Title...">
+                <button type="button" onclick="newElement()">Add</button>
+            </div>
+
+        <ul id="myUL">
+            <li>
+                <label>
+                    <input type="checkbox" name=""  checked>
+                    <span></span>
+                    <p id="TodoText">Complete online JavaScript course</p>
+                    <button class="deleteButton" ></button>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" >
+                    <span></span>
+                    <p>Jog around the park 3x</p>
+                    <button name="deleteButton"  ></button>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" >
+                    <span></span>
+                    <p>!0 minutes meditation</p> 
+                    <button name="deleteButton" ></button>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" >
+                    <span></span>
+                    <p>Read for 1 hour</p>
+                    <button name="deleteButton"  ></button>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" >
+                    <span></span>
+                    <p>Pick up groceries</p>
+                    <button name="deleteButton" ></button>
+                </label>
+            </li>
+        </ul>
+    </div>
+</div>
+    </Body>
+</html>
